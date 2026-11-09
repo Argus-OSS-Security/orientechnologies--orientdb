@@ -3,15 +3,16 @@
 
 name: Java CI with Maven
 
-on:
-  push:
-    branches: [ develop, 3.2.x]
-  pull_request:
-    branches: [ develop, 3.2.x ]
-  workflow_dispatch:
-  schedule:
-    - cron: 0 5 * * 1
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [ develop, 3.2.x]
+#   pull_request:
+#     branches: [ develop, 3.2.x ]
+#   workflow_dispatch:
+#   schedule:
+#     - cron: 0 5 * * 1
+# 
 permissions:
   contents: read
 

@@ -11,14 +11,15 @@
 #
 name: "CodeQL"
 
-on:
-  push:
-    branches: [ "develop" ]
-  pull_request:
-    branches: [ "develop" ]
-  schedule:
-    - cron: '40 17 * * 2'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [ "develop" ]
+#   pull_request:
+#     branches: [ "develop" ]
+#   schedule:
+#     - cron: '40 17 * * 2'
+# 
 jobs:
   analyze:
     name: Analyze
